@@ -1,4 +1,3 @@
-module 665754be210f.ngrok-free.app/evil
+module github.com/MostafaRashidy/evil
 
 go 1.20
-
